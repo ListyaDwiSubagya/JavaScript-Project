@@ -1,0 +1,134 @@
+@import url( 
+'https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+body { 
+	font-family: 'Poppins', sans-serif; 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	background-color: rgb(212, 228, 228); 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	height: 729px; 
+} 
+
+/* Style for the card and border */
+.card { 
+
+	height: 280px; 
+	width: 541px; 
+	padding: 20px; 
+	background-color: #8EC5FC; 
+	background-image: 
+		linear-gradient(50deg, #accceb 0%, #c4a6e0 100%); 
+	box-shadow: rgba(25, 24, 27, 0.75) 0px 15px 20px; 
+	border-radius: 10px; 
+} 
+
+#btn-parent { 
+	display: flex; 
+	gap: 10px; 
+} 
+
+/* Style for the button */
+.btn { 
+	padding: 10px; 
+	height: 40px; 
+	width: 100px; 
+	border-radius: 50px; 
+	font-size: 15px; 
+	background-color: rgb(106, 130, 211); 
+	color: antiquewhite; 
+} 
+
+/* Style for the heading paragraph and button */
+.content { 
+	display: flex; 
+	justify-content: center; 
+	flex-direction: column; 
+	align-items: center; 
+	padding: 12px; 
+	margin: 8px; 
+	box-sizing: border-box; 
+} 
+
+.heading-name { 
+	color: rgb(10, 83, 10); 
+	animation: namegfg 2s ease-in-out both; 
+} 
+
+#pid { 
+	font-weight: 600; 
+	line-height: 50px; 
+	color: #0f4983; 
+} 
+
+/* For Animation */
+.animationjs { 
+	animation: ani 2s ease-in-out both; 
+} 
+
+@keyframes ani { 
+	0% { 
+		transform: scale(1); 
+		opacity: 0; 
+	} 
+
+	25% { 
+		transform: scale(0.8); 
+		opacity: 0.25; 
+	} 
+
+	50% { 
+		transform: scale(1.2); 
+		opacity: 1.50; 
+	} 
+
+	75% { 
+		transform: scale(1.3); 
+		opacity: 0; 
+	} 
+
+	100% { 
+		transform: scale(1); 
+		opacity: 1; 
+	} 
+} 
+
+@keyframes namegfg { 
+	0% { 
+		transform: scale(1); 
+	} 
+
+	25% { 
+		transform: scale(0.8); 
+	} 
+
+	50% { 
+		transform: scale(1.2); 
+	} 
+
+	75% { 
+		transform: scale(1.5); 
+	} 
+
+	100% { 
+		transform: scale(1); 
+	} 
+} 
+
+/* Media queries */
+
+@media only screen and (max-width: 582px) { 
+	.card { 
+		height: 340px; 
+		width: 250px; 
+		padding: 20px; 
+		background-color: #8EC5FC; 
+		background-image: 
+			linear-gradient(50deg, #accceb 0%, #c4a6e0 100%); 
+		box-shadow: rgba(25, 24, 27, 0.75) 0px 15px 20px; 
+		border-radius: 10px; 
+	} 
+}

@@ -10,12 +10,10 @@ addBtn.addEventListener("click", function () {
 const saveNotes = () => { 
 
 	// Select content textareas 
-	const notes = 
-		document.querySelectorAll(".note .content"); 
+	const notes = document.querySelectorAll(".note .content"); 
 		
 	// Select title textareas 
-	const titles = 
-		document.querySelectorAll(".note .title"); 
+	const titles = document.querySelectorAll(".note .title"); 
 
 	const data = []; 
 

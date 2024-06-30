@@ -1,0 +1,47 @@
+* { 
+	box-sizing: border-box; 
+	margin: 2%; 
+} 
+
+body { 
+	text-align: center; 
+	margin: auto; 
+	display: flex; 
+	flex-direction: column; 
+} 
+
+.root { 
+	margin-top: 5%; 
+	display: flex; 
+	flex-direction: column; 
+	width: 30rem; 
+	margin: auto; 
+	margin-top: 5%; 
+	box-shadow: 0 4px 10px rgb(46, 63, 57); 
+	background-color: rgb(122, 199, 173); 
+	border-radius: 0 10px; 
+	padding: 3%; 
+} 
+
+.option { 
+	text-align: left; 
+	display: flex; 
+	flex-direction: column; 
+	font-size: x-large; 
+	padding: 2%; 
+	margin: auto; 
+} 
+
+.option>span { 
+	display: flex; 
+	padding: 2%; 
+} 
+
+span>label { 
+	width: 50%; 
+} 
+
+input { 
+	width: 50%; 
+	font-size: large; 
+}

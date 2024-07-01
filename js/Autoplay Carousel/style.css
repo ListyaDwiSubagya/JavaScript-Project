@@ -1,0 +1,60 @@
+* { 
+    box-sizing: border-box; 
+} 
+
+body { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background-color: #f4f4f4;
+} 
+
+.carousel { 
+    position: relative; 
+    width: 270px; 
+    height: 160px; 
+    overflow: hidden; 
+    background-color: #cdcdcd; 
+} 
+
+.carousel-item .slide-image { 
+    width: 270px; 
+    height: 160px; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+} 
+
+.carousel-item { 
+    position: absolute; 
+    width: 100%; 
+    height: 160px; 
+    top: 0; 
+    left: 100%; 
+} 
+
+.carousel-item.active { 
+    left: 0; 
+    transition: all 0.3s ease-out; 
+} 
+
+.carousel-item div { 
+    height: 100%; 
+} 
+
+.red { 
+    background-color: red; 
+} 
+
+.green { 
+    background-color: green; 
+} 
+
+.yellow { 
+    background-color: yellow; 
+} 
+
+.violet { 
+    background-color: violet; 
+}

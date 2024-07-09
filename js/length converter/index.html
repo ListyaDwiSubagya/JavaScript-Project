@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Length Converter</title> 
+
+	<style> 
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+		.container { 
+			margin: 20px auto; 
+			width: 300px; 
+			background-color: #f1f1f1; 
+			padding: 20px; 
+			border-radius: 5px; 
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+		} 
+
+		h1 { 
+			text-align: center; 
+			margin-bottom: 20px; 
+		} 
+
+		input[type="number"] { 
+			width: 100%; 
+			padding: 10px; 
+			margin-bottom: 10px; 
+			box-sizing: border-box; 
+		} 
+
+		select { 
+			width: 100%; 
+			padding: 10px; 
+			margin-bottom: 10px; 
+			box-sizing: border-box; 
+		} 
+
+		p { 
+			text-align: center; 
+			margin-top: 20px; 
+			font-weight: bold; 
+			font-size: 20px; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<div class="container"> 
+		<h1>Length Converter</h1> 
+		<input type="number" id="inputValue"
+			placeholder="Enter value"
+			oninput="convert()"> 
+
+		<select id="fromUnit" onchange="convert()"> 
+			<option value="cm">Centimeter (cm)</option> 
+			<option value="inch">Inch (in)</option> 
+			<option value="feet">Feet (ft)</option> 
+			<option value="meter">Meter (m)</option> 
+			<option value="yard">Yard (yd)</option> 
+			<option value="mile">Mile (mi)</option> 
+			<option value="kilometer">Kilometer (km)</option> 
+		</select> 
+		<select id="toUnit" onchange="convert()"> 
+			<option value="cm">Centimeter (cm)</option> 
+			<option value="inch">Inch (in)</option> 
+			<option value="feet">Feet (ft)</option> 
+			<option value="meter">Meter (m)</option> 
+			<option value="yard">Yard (yd)</option> 
+			<option value="mile">Mile (mi)</option> 
+			<option value="kilometer">Kilometer (km)</option> 
+		</select> 
+		<p id="result"></p> 
+	</div> 
+
+	<script src="script.js"></script>
+</body> 
+
+</html>

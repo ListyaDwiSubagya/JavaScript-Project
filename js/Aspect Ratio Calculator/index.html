@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Aspect Ratio Calculator 
+		with Live Image Preview
+	</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Aspect Ratio Calculator with 
+		<span>Live Preview </span> 
+		</h1>
+
+		<label for="width">Width:</label>
+		<input type="number"
+			id="width"
+			placeholder="Enter width"
+			oninput="calculateAspectRatio()">
+		<br>
+
+		<label for="height">Height:</label>
+		<input type="number"
+			id="height"
+			placeholder="Enter height"
+			oninput="calculateAspectRatio()">
+		<br>
+
+		<label for="commonRatios">Select Common Ratio:</label>
+		<select id="commonRatios" onchange="setCommonRatio()">
+			<option value="16:9">
+				16:9 (1920x1080)
+			</option>
+			<option value="5:4">
+				5:4 (1280x1024)
+			</option>
+			<option value="4:3">
+				4:3 (1024x768)
+			</option>
+			<option value="3:2">
+				3:2 (1440x960)
+			</option>
+			<option value="8K">
+				8K (7680x4320)
+			</option>
+			<option value="5K">
+				5K (5120x2880)
+			</option>
+			<option value="4K">
+				4K (3840x2160)
+			</option>
+			<option value="Retina">
+				IPad with Retina (2048x1536)
+			</option>
+			<option value="iPhone6plus">
+				IPhone 6 Plus (1920x1080)
+			</option>
+			<option value="iPhone6">
+				IPhone 6 (1334x750)
+			</option>
+			<option value="iPhone5">
+				IPhone 5 (1136x640)
+			</option>
+			<option value="iPad">
+				IPad (1024x768)
+			</option>
+			<option value="Twitter">
+				Twitter (1024x512)
+			</option>
+			<option value="WebBanner">
+				Common Web Banner (728x90)
+			</option>
+			<option value="VGA">
+				VGA (640x480)
+			</option>
+			<option value="HVGA">
+				HVGA (320x480)
+			</option>
+		</select>
+		<br>
+
+		<button onclick="calculateAspect()">Calculate</button>
+
+		<p class="result" id="result1">
+			Diagonal: 
+		</p>
+		<p class="result" id="result2">
+			Aspect Ratio (x:1 format): 
+		</p>
+		<p class="result" id="result3">
+			Aspect Ratio (w:h format): 
+		</p>
+
+		<div id="imageContainer">
+			<img id="previewImage"
+				src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230816223829/geeksgforgeeks-logo-1.png"
+				alt="Preview Image">
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body> 
+	<div class="ground"> 
+		<div id="circle" onclick="count()"></div> 
+	</div> 
+	<div class="details"> 
+		<h1>Tap The Geek</h1> 
+		<h3>Click on a difficulty to start the game</h3> 
+		<div class="level"> 
+			<button onclick="easy()">EASY</button> 
+			<button onclick="medium()">MEDIUM</button> 
+			<button onclick="hard()">HARD</button> 
+		</div> 
+		<div class="display_score"> 
+			<h2>Score</h2> 
+			<h2 id="score">0</h2> 
+		</div> 
+		<button onclick="restart()">RESTART</button> 
+	</div> 
+
+	<script src="script.js"></script> 
+</body> 
+	
+</html>

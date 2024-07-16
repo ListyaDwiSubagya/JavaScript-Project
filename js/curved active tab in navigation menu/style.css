@@ -1,0 +1,97 @@
+<!--Style for making the navigation menu-->
+.navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: auto;
+    width: 100%;
+    background: #308d46;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+}
+
+.navbar ul li {
+    display: inline;
+    list-style: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+}
+
+.navbar ul li.active {
+    background: #fff;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li.active a {
+    color: #308d46;
+}
+
+<!-- The Pseudo elements Style 
+for the outside curve-->
+
+.navbar ul li b.left-curve {
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #fff;
+    display: none;
+}
+
+.navbar ul li b.left-curve::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background: #308d46;
+}
+
+.navbar ul li b.right-curve {
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    height: 100%;
+    width: 20px;
+    background: #fff;
+    display: none;
+}
+
+.navbar ul li b.right-curve::before {
+    content: "";
+    right: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    background: #308d46;
+}
+
+.navbar ul li.active b.left-curve,
+.navbar ul li.active b.right-curve {
+    display: block;
+}

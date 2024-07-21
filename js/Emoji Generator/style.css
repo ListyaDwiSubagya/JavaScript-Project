@@ -1,0 +1,120 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+} 
+
+body { 
+	font-family: "Arial", sans-serif; 
+	background: linear-gradient(135deg, 
+					#f4fb8f, #ff6b6b); 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	height: 100vh; 
+	margin: 0; 
+} 
+
+.container { 
+	background-color: rgba(255,255,255,0.9); 
+	border-radius: 20px; 
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+	padding: 2rem; 
+	text-align: center; 
+	animation: fadeIn 1s ease; 
+	width: 80%; 
+	max-width: 500px; 
+} 
+
+h1 { 
+	color: #00a136; 
+	font-size: 2.5rem; 
+	margin-bottom: 1rem; 
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+} 
+
+.emoji-container { 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	gap: 20px; 
+} 
+
+.emoji { 
+	font-size: 5rem; 
+	transition: transform 0.3s ease-in-out; 
+	color: #ff6b6b; 
+} 
+
+.generate-random-button { 
+	background-color: #4e6bff; 
+	color: #fff; 
+	border: none; 
+	padding: 10px 20px; 
+	border-radius: 10px; 
+	font-size: 1rem; 
+	cursor: pointer; 
+	transition: background-color 0.3s ease-in-out, 
+		transform 0.2s ease-in-out; 
+	width: 100%; 
+	margin-top: 20px; 
+} 
+
+.generate-random-button:hover { 
+	background-image: linear-gradient(45deg, 
+			#4e6bff, 
+			#ff6b6b); 
+	transform: scale(1.05); 
+} 
+
+.emoji-name { 
+	font-size: 1.5rem; 
+	font-weight: bold; 
+	color: #444; 
+} 
+
+.feeling-buttons { 
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center; 
+	gap: 10px; 
+	margin-top: 20px; 
+} 
+
+.btn { 
+	background-color: #4e6bff; 
+	color: #fff; 
+	border: none; 
+	padding: 10px 20px; 
+	border-radius: 10px; 
+	font-size: 1rem; 
+	cursor: pointer; 
+	transition: background-color 0.3s ease-in-out, 
+		transform 0.2s ease-in-out; 
+	width: 45%; 
+} 
+
+.btn:hover { 
+	background-image: linear-gradient(45deg, 
+			#4e6bff, 
+			#ff6b6b); 
+	transform: scale(1.05); 
+} 
+
+.copied { 
+	animation: pulse 1s ease infinite; 
+} 
+
+@keyframes pulse { 
+	0% { 
+		transform: scale(1); 
+	} 
+
+	50% { 
+		transform: scale(1.1); 
+	} 
+
+	100% { 
+		transform: scale(1); 
+	} 
+}
